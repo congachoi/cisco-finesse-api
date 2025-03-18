@@ -9,10 +9,10 @@ const port = 3000;
 
 // Cấu hình từ biến môi trường
 const CONFIG = {
-  FINESSE_HOST: process.env.FINESSE_HOST || '198.18.133.16',
-  FINESSE_PORT: process.env.FINESSE_PORT || 8445,
-  ADMIN_USERNAME: process.env.FINESSE_USER || 'administrator',
-  ADMIN_PASSWORD: process.env.FINESSE_PASS || 'C1sco12345'
+  FINESSE_HOST: process.env.FINESSE_HOST || '198.18.133.16',	// Thay bằng IP hoặc FQDN của Finesse Server
+  FINESSE_PORT: process.env.FINESSE_PORT || 8445,				// Port mặc định cho HTTPS
+  ADMIN_USERNAME: process.env.FINESSE_USER || 'administrator',	// Thay bằng username admin
+  ADMIN_PASSWORD: process.env.FINESSE_PASS || 'C1sco12345'		// Thay bằng password admin
 };
 
 // Tắt kiểm tra SSL (chỉ dùng thử nghiệm)
